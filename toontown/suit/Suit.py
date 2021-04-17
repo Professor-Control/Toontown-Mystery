@@ -103,7 +103,7 @@ gh = (('speak', 'speak', 5), ('finger-wag', 'finger-wag', 5), ('effort', 'effort
 ms = (('smile', 'smile', 5),
  ('throw-object', 'throw-object', 5),
  ('throw-paper', 'throw-paper', 5),
- ('finger-wag', 'fingerwag', 5),
+ ('finger-wag', 'finger-wag', 5),
  ('phone', 'phone', 5),
  ('finger-wag', 'finger-wag', 5))
 tf = (('smile', 'smile', 5),
@@ -465,7 +465,8 @@ class Suit(Avatar.Avatar):
             self.scale = 4.5 / bSize
             self.handColor = VBase4(1.0, 0, 0.2, 0.5)
             self.generateBody()
-            self.generateHead('beancounter')
+            self.headTexture = 'cat.jpg'
+            self.generateHead('movershaker')
             self.setHeight(5.25)
         elif dna.name == 'ds':
             self.scale = 4.5 / aSize
